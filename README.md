@@ -8,6 +8,8 @@ docker run \
   -d \
   -e FTP_USER=www \
   -e FTP_PASS=my-password \
+  -e FTP_UID=101 \
+  -e FTP_GID=102 \
   -e PASV_ADDRESS=5.6.7.8 \
   -e PASV_MIN=21100 \
   -e PASV_MAX=21110 \
@@ -31,6 +33,8 @@ services:
    environment:
     - FTP_USER=user
     - FTP_PASS=my-password
+    - FTP_UID=101
+    - FTP_GID=102
     - PASV_ADDRESS=5.6.7.8
     - PASV_MIN=21100
     - PASV_MAX=21110

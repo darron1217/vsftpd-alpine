@@ -4,6 +4,8 @@ MAINTAINER avenus.pl
 
 ENV FTP_USER=foo \
     FTP_PASS=foo123 \
+    FTP_UID=101 \
+    FTP_GID=102 \
     PASV_ADDRESS=someadres.com \
     PASV_MIN=21100 \
     PASV_MAX=21110
